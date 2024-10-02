@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brief Session Summaries</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -12,16 +12,22 @@
         <div class="sidebar">
             <h2>dnd-xaqios</h2>
             <ul>
-                <li><a href="#">Session 8 - Trouble in Granth</a></li>
-                <li><a href="#">Session 9 - Infiltration</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-btn">Session 8 - Trouble in Granth</a>
+                    <ul class="dropdown-container">
+                        <li><a href="#">Session 4</a></li>
+                        <li><a href="#">Session 5</a></li>
+                        <li><a href="#">Session 6</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-btn">Session 9 - Infiltration</a>
+                    <ul class="dropdown-container">
+                        <li><a href="#">Session 7</a></li>
+                        <li><a href="#">Session 8</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Session 10 - Burning Webs</a></li>
-                <li>Rough Session Notes</li>
-                <ul>
-                    <li><a href="#">Session 4</a></li>
-                    <li><a href="#">Session 5</a></li>
-                    <li><a href="#">Session 6</a></li>
-                    <!-- Add more sessions here -->
-                </ul>
             </ul>
         </div>
 
@@ -70,5 +76,7 @@
             <!-- Add more sessions as needed -->
         </div>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
