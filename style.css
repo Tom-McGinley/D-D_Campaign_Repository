@@ -20,6 +20,7 @@ body {
     color: white;
     padding: 20px;
     height: 100vh;
+    overflow-y: auto;
 }
 
 .sidebar h2 {
@@ -31,10 +32,6 @@ body {
     list-style: none;
 }
 
-.sidebar ul ul {
-    padding-left: 20px;
-}
-
 .sidebar ul li {
     margin: 10px 0;
 }
@@ -43,10 +40,25 @@ body {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .sidebar ul li a:hover {
     text-decoration: underline;
+}
+
+.dropdown-container {
+    display: none;
+    padding-left: 20px;
+}
+
+.dropdown-btn::after {
+    content: ' \25BC'; /* Add a down arrow symbol */
+    float: right;
+}
+
+.dropdown-btn.active::after {
+    content: ' \25B2'; /* Change to an up arrow when active */
 }
 
 .main-content {
